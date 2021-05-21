@@ -16,8 +16,28 @@ int main()
   bst.insert(40);
   bst.insert(100);
 
-  cout << "Ascendente ..." << endl;
+  cout << "Ascendente iterator ..." << endl;
+  bst.visitNodeAscIterador();
+
+  cout << "Descendente iterator ..." << endl;
+  bst.visitNodeDescIterador();
+
+  // bst.test();
+  bst.remove(10);
+  bst.remove(30);
+  bst.remove(50);
+  bst.remove(40);
+
+  cout << "Pre-Order:" << endl;
+  bst.VisitNodesPreOrden();
+  cout << "In-Order:" << endl;
   bst.VisitNodesAsc();
-  cout << "Descendente ..." << endl;
-  bst.VisitNodesDesc();
+  cout << "Post-Order:" << endl;
+  bst.VisitNodesPostOrden();
+
+  cout << "recorrido BFS:" << endl;
+  bst.recorridoBFS();
+
+  cout << "recorrido DFS:" << endl;
+  bst.recorridoDFS();
 }
