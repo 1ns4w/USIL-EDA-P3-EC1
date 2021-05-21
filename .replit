@@ -1,0 +1,2 @@
+language = "c++"
+run = "clang++ -pthread -std=c++17 -o main main.cpp && ./main"
